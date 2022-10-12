@@ -1,0 +1,46 @@
+/*social-footer*/
+.social {
+  margin-left: 70px;
+}
+
+.social__title {
+  color: $primary-background-color;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.social__card {
+  display: flex;
+  height: 44px;
+  width: 206px;
+  justify-content: space-between;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social__icon {
+  height: 20px;
+  width: 20px;
+  fill: $primary-background-color;
+  transition: fill 250ms $timing-function;
+  &:hover svg,
+  &:focus svg {
+    fill: $primary-background-color;
+  }
+}

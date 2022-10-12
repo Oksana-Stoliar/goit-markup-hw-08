@@ -1,0 +1,25 @@
+/*contact-footer*/
+.contact__adres {
+    color: $text-color;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+}
+
+.contact__card {
+    margin-top: 20px;
+}
+
+.contact__item {
+    margin-bottom: 9px;
+    &:last-child {
+            margin-bottom: 0px;
+        }
+}
+.contact__link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+}
+

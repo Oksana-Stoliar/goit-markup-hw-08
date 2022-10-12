@@ -1,0 +1,43 @@
+/*Auth-nav*/
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.auth-nav__link {
+    display: flex;
+    height: 16px;
+    color: $secondary-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: color 250ms $timing-function;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+            &:hover svg,
+            &:focus svg {
+                    fill: $accent-color;
+                }
+        }
+}
+
+.auth-nav__icon {
+    height: 20px;
+    width: 18px;
+    margin-right: 10px;
+    width: 18px;
+    height: 20px;
+    padding: 0;
+    fill: $secondary-text-color;
+    transition: fill 250ms $timing-function;
+ 
+    
+}
+.auth-nav__item+.auth-nav__item {
+    margin-left: 50px;
+}
