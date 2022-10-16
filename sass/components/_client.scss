@@ -1,33 +1,62 @@
 /*Client*/
-.client {
-  padding-bottom: 94px;
-}
-
 .client__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 32px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .client__card {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .client__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .client__link {
   display: flex;
-  width: 170px;
+  //width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
   transition: border-color 250ms $timing-function;
+
   &:hover,
   &:focus {
     border-color: $accent-color;
