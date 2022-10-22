@@ -42,10 +42,6 @@
 .email__button {
   @extend %button;
   padding: 10px 28px;
-
-  @media screen and (min-width: 480px) and (max-width: 1200px) {
-    margin-top: 20px;
-  }
 }
 
 .filter__button {
