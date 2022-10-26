@@ -1,17 +1,15 @@
 .menu-nav {
   @media screen and (max-width: 767px) {
     display: flex;
+    flex-wrap: wrap;
   }
-
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-
 .menu-nav__item {
   margin-right: 20px;
   position: relative;
-
   &:not(:first-child)::before {
     display: block;
     position: absolute;
@@ -22,7 +20,6 @@
     top: 8px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
-
     &:first-child {
       content: none;
     }
@@ -37,7 +34,6 @@
   letter-spacing: 0.02em;
   color: $primary-text-color;
   transition: color 250ms $timing-function;
-
   &:hover,
   & :focus {
     color: $accent-color;
